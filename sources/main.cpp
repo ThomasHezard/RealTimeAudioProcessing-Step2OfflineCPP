@@ -33,6 +33,7 @@ int main( int argc, char *argv[]) {
 
     // prepare audio processor and processing buffers
     AudioProcessor * processor = new AudioProcessor{};
+    processor->Prepare();
     unsigned int buffer_size = 4096;
     float * input_buffer = (float*)calloc(buffer_size, sizeof(float));
     float * output_buffer = (float*)calloc(buffer_size, sizeof(float));

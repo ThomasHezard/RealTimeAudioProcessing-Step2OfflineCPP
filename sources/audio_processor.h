@@ -14,6 +14,9 @@ class AudioProcessor {
     AudioProcessor();
     ~AudioProcessor() = default;
 
+    // Prepare function
+    void Prepare();
+
     // Process
     void Process(float* input_buffer, float* output_buffer, int number_frames);
 
